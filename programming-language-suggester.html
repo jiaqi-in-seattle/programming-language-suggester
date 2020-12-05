@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+<body>
+  <div id="introduction">
+    <h1>Welcome to the Programming Language Suggester!</h1>
+    <img src="img/programming.jpg" class="centered-image">
+    <h2>According to Wikipedia, there are about 700 programming languages, then how could you decide which one is suitable for you? </h2>
+    <h2>Let's take a short survey and based on your answers, you will see some suggestions on choosing programming languages! </h2>
+
+    <button type="submit" class="btn" id="start">Let's get started!</button>
+  </div>
+
+  <div class="container">
+    <form id="survey">
+      <div id="questions">
+        <p>1. Please enter your name here:</p>
+        <input type="text" id="name" name="name">
+
+        <p>2. Do you have previous coding experience?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="yes">
+            Yes
+          </label> 
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="no">
+            No
+          </label>
+        </div>
+        
+        <p>3. How do you feel about learning to program?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="feel" value="excited">
+            Excited
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="feel" value="scared">
+            Scared
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="feel" value="confused">
+            Confused
+          </label>
+        </div>
+
+        <p>4. What do you want to build through programming?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="kinds" value="android">
+            Android apps
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="kinds" value="ios">
+            iOS apps
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="kinds" value="database">
+            Database design
+          </label>
+        </div>
+
+        <p>5. Are you more interested in back-end or front-end?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="end" value="back">
+            Back-end: server, applications, database, etc
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="end" value="front">
+            Front-end: user interface including buttons, menus, pages, etc
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn" id="complete">See the results!</button>
+    </form>
+
+    <div id="result">
+      <p>Thank you for taking the survey, <span id="username"></span>!</p>
+      <p>Here are some suggestions about choosing the programming languages for you!</p>
+    </div>
+
+    <div id="java">
+      <h1>Java</h1>
+      <img src="img/java.png" class="centered-image">
+      <p>Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+      <p>It is a general-purpose programming language intended to let application developers write once, run anywhere.</p>
+      <p>Java gives the best option for development of mobile applications that are based on Android, as Android consists of its own APIs and Java libraries.</p>
+    </div>
+
+    <div id="sql">
+    <h1>SQL</h1>
+    <img src="img/sql.png" class="centered-image">
+    <p>SQL stands for Structured Query Language and it is a domain-specific language used in programming.</p>
+    <p>It is designed for managing data held in RDBMS or RDSMS and is particularly useful in handling structured data, such as data incorporating relations among entities and variables.</p>
+    </div>
+
+    <div id="swift">
+    <h1>Swift</h1>
+    <img src="img/swift.png" class="centered-image">
+    <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community.</p>
+    <p>It is an alternative to the Objective-C and it works with Apple's Cocoa and Cocoa Touch frameworks.</p>
+    <p>It is a powerful and intuitive programming language for macOS, iOS, watch OS, tvOS, and beyond.</p>
+    </div>
+  </div>
+</body>
+</html>

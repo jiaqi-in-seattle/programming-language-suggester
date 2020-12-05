@@ -1,0 +1,58 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.centered-image {
+  margin: auto;
+  width: 30%;
+  height:auto;
+  display:block;
+}
+
+#start {
+  background-color: white;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+#complete {
+  background-color: white;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+#survey {
+  display: none;
+}
+
+
+#result {
+  display: none;
+}
+
+#java {
+  display: none;
+  border: 5px solid black;
+  padding: 5px;
+}
+
+#sql {
+  display: none;
+  border: 5px solid black;
+  padding: 5px;
+}
+
+#swift {
+  display: none;
+  border: 5px solid black;
+  padding: 5px;
+}
+
+img {
+  width: 250px;
+}
